@@ -1,1 +1,3 @@
-*
+#ignores python cache files and csv files per project requirements
+__pycache__
+*.csv
