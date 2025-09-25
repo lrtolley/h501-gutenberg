@@ -9,5 +9,6 @@ gutenberg_metadata = pd.read_csv('https://raw.githubusercontent.com/rfordatascie
 gutenberg_subjects = pd.read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2025/2025-06-03/gutenberg_subjects.csv')
 
 def list_aliases():
+    '''Listing the aliases as a function for the purposes of the exercise'''
     aliases = gutenberg_authors['alias'].values.tolist()
     return aliases
