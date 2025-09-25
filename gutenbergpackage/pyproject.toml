@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gutenbergpkg"
+version = "0.0.1"
+description = "Tiny helpers for loading Project Gutenberg tidyTuesday datasets"
+authors = [ {name = "lrtolley"} ]
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+dependencies = ["pandas>=1.5"]
