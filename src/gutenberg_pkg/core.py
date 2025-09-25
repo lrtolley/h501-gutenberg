@@ -1,4 +1,6 @@
 import pandas as pd
+import numpy as np
+import seaborn as sns
 
 gutenberg_authors = pd.read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2025/2025-06-03/gutenberg_authors.csv')
 gutenberg_languages = pd.read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2025/2025-06-03/gutenberg_languages.csv')
@@ -6,5 +8,5 @@ gutenberg_metadata = pd.read_csv('https://raw.githubusercontent.com/rfordatascie
 gutenberg_subjects = pd.read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2025/2025-06-03/gutenberg_subjects.csv')
 
 def list_aliases():
-    """List all unique author aliases."""
-    return gutenberg_authors['alias'].unique().tolist()
+    """List all author aliases."""
+    return gutenberg_authors['alias'].values.tolist()
