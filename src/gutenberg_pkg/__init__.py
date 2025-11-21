@@ -8,4 +8,4 @@ __all__ = ["version"]
 version = "0.0.0"
 
 
-from .core import list_aliases
+from .core import list_authors
